@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+* { 
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-blue-subtitle {
+    color: #0B3FB8;
+}
+
+.button-cv {
+    background-color: rgb(255, 143, 51);
+}
+
+.button-cv:hover {
+    background-color: rgb(255, 143, 51, 0.8);
+}
+
+.hover-nav:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid white;
+    transform: scaleX(0);
+    transition: 0.3s all ease-in-out;
+    width: 100%;
+}
+
+.hover-nav:hover:after {
+    transform: scaleX(1.5);
+}
+
+.gradient-text {
+    background: #FF895E;
+    background: linear-gradient(to right, #FF895E 0%, #A0FF91 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hamburguer-lines{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.line{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+}
+.line-1:checked{
+    background-color: blue;
+}
+
+.checkbox{
+    position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+.line1{
+    transform-origin: 0% 0%;
+}
+.line3{
+    transform-origin: 0% 100%;
+}
+.line1,.line2,.line3{
+    transition: transform 1s ease-in-out;
+}
+.list-items{
+    position: absolute;
+   transform: translateX(1000px);
+    transition: transform 1s ease-in-out;
+    right: 0;
+    top: 70px;
+    width: 100%;
+    height: 100vh;
+}
+
+.checkbox:checked ~ .line1{
+    transform: rotate(45deg);
+}
+.checkbox:checked ~ .line2{
+    transform: scaleY(0);
+}
+.checkbox:checked ~ .line3{
+    transform: rotate(-45deg);
+}
+.checkbox:checked ~ .list-items{
+    transform: translateX(0);
+}
