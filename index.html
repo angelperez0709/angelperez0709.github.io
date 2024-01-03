@@ -7,6 +7,7 @@
     <meta name="description" content="THis is my web portfolio where you can see my information">
     <title>Andev</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
     <link rel="stylesheet" href="style.css">
     </link>
     <script>
@@ -50,11 +51,11 @@
                   <span class="line line2"></span>
                   <span class="line line3"></span>
                   <div class="bg-gray-700 list-items absolute text-gray-950 w-full">
-                    <ul class="list-none border-0 text-white p-2">
-                        <li class="font-bold p-2 border-b-gray-900">Inicio</li>
-                        <li class="font-bold p-2 border-b-gray-900">Proyectos</li>
-                        <li class="font-bold p-2 border-b-gray-900">Experiencia laboral</li>
-                        <li class="font-bold p-2 border-b-gray-900">Contacto</li>
+                    <ul id="accesos-burguer" class="list-none border-0 text-white p-2">
+                        <li class="font-bold p-2 border-b-gray-900"><a href="#about" class="no-underline decoration-white">Inicio</a></li>
+                        <li class="font-bold p-2 border-b-gray-900"><a href="#proyectos" class="no-underline decoration-white">Proyectos</a></li>
+                        <li class="font-bold p-2 border-b-gray-900"><a href="#experiencia" class="no-underline decoration-white">Experiencia laboral</a></li>
+                        <li class="font-bold p-2 border-b-gray-900"><a href="#contacto" class="no-underline decoration-white">Contacto</a></li>
                     </ul>
                 </div>
                 </div> 
@@ -159,7 +160,7 @@
                             </p>
                         </div>
                         <div class="flex justify-around">
-                            <a href="./assets/CV.pdf" target="_blank" download="curriculumAngelPerez.pdf" class="bg-[#f39d00] text-white p-1 rounded-lg text-black">
+                            <a href="./assets/CV.pdf" target="_blank" download="curriculumAngelPerez.pdf" class="no-underline decoration-white bg-[#f39d00] text-white p-1 rounded-lg text-black">
                                 Descargar cv
                                 <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     stroke-width="1.5" viewBox="0 0 24 24" fill="none">
