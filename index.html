@@ -8,8 +8,7 @@
     <title>Andev</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./index.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </link>
+    <link rel="stylesheet" href="style.css"/>
     <script>
         tailwind.config = {
             theme: {
@@ -41,9 +40,9 @@
 </head>
 
 <body class="bg-gray-700 text-white">
-    <header class="grid md:grid-cols-[1fr_2fr_1fr] grid-cols-2 gap-20 fixed w-full p-5 bg-gray-700 z-10" id="header">
+    <header class="grid xl:grid-cols-[1fr_2fr_1fr] grid-cols-2 gap-20 fixed w-full p-5 bg-gray-700 z-10" id="header">
         <h1 class="font-bold text-3xl">Andev</h1>
-        <div class="md:hidden flex justify-end">
+        <div class="xl:hidden flex justify-end">
             <div>
                 <div class="hamburger-lines">
                     <input type="checkbox" class="checkbox" />
@@ -53,6 +52,7 @@
                   <div class="bg-gray-700 list-items absolute text-gray-950 w-full">
                     <ul id="accesos-burguer" class="list-none border-0 text-white p-2">
                         <li class="font-bold p-2 border-b-gray-900"><a href="#about" class="no-underline decoration-white">Inicio</a></li>
+                        <li class="font-bold p-2 border-b-gray-900"><a href="#cursos" class="no-underline decoration-white">Cursos</a></li>
                         <li class="font-bold p-2 border-b-gray-900"><a href="#proyectos" class="no-underline decoration-white">Proyectos</a></li>
                         <li class="font-bold p-2 border-b-gray-900"><a href="#experiencia" class="no-underline decoration-white">Experiencia laboral</a></li>
                         <li class="font-bold p-2 border-b-gray-900"><a href="#contacto" class="no-underline decoration-white">Contacto</a></li>
@@ -61,7 +61,7 @@
                 </div> 
             </div>
         </div>
-        <nav class="hidden md:block">
+        <nav class="hidden xl:block">
             <ul class="flex text-center">
                 <li class="flex-1 justify-start flex items-center">
                     <a href="#about" class="hover-nav flex flex-col items-center justify-center  w-fit">
@@ -73,6 +73,20 @@
                                 <path
                                     d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
                             </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="flex-1 flex gap-1 justify-center items-center">
+                    <a href="#cursos" class="hover-nav flex flex-col items-center justify-center  w-fit">
+                        <div class="flex justify-center items-center cursor-pointer flex-row gap-1">
+                            <span>Cursos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" version="1.0" width="16" height="16" viewBox="0 0 512.000000 512.000000">
+
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+                                <path d="M1325 4833 c-242 -51 -448 -217 -554 -444 -81 -175 -76 -45 -76 -1834 l0 -1590 22 -85 c81 -305 316 -532 616 -594 67 -14 217 -16 1227 -16 1255 0 1221 -1 1368 57 165 67 329 217 407 376 25 51 55 130 68 177 l22 85 0 1595 0 1595 -23 85 c-82 309 -312 532 -614 594 -68 14 -215 16 -1235 15 -988 -1 -1168 -3 -1228 -16z m2436 -319 c118 -35 238 -134 294 -243 55 -110 55 -92 55 -1293 l0 -1107 -1367 -4 c-1246 -3 -1374 -5 -1431 -20 -84 -23 -175 -62 -239 -103 -29 -19 -56 -34 -58 -34 -3 0 -5 537 -5 1193 0 1296 -1 1256 56 1369 52 103 170 203 282 239 54 17 120 18 1208 18 1024 1 1156 -1 1205 -15z m349 -3221 c0 -283 -9 -352 -55 -444 -35 -67 -124 -161 -189 -198 -113 -64 -46 -61 -1307 -61 -1098 0 -1150 1 -1208 19 -209 65 -356 280 -337 493 11 122 74 250 160 324 49 44 165 101 227 113 24 5 644 9 1377 10 l1332 1 0 -257z"/>
+                                <path d="M1850 3338 c-117 -60 -115 -225 4 -279 39 -18 79 -19 706 -19 634 0 667 1 707 20 106 48 120 195 25 268 l-35 27 -681 3 -681 2 -45 -22z"/>
+                                </g>
+                                </svg>
                         </div>
                     </a>
                 </li>
@@ -116,7 +130,7 @@
                 </li>
             </ul>
         </nav>
-        <nav class="hidden md:block">
+        <nav class="hidden xl:block">
             <ul class="flex justify-end gap-10">
                 <li>
                         <a href="https://www.linkedin.com/in/%C3%A1ngel-p%C3%A9rez-mart%C3%ADnez-6b5933210/"
@@ -159,7 +173,7 @@
                                 personas que me rodean.
                             </p>
                         </div>
-                        <div class="flex justify-around">
+                        <div class="flex-wrap flex gap-4 justify-around">
                             <a href="./assets/CV.pdf" target="_blank" download="curriculumAngelPerez.pdf" class="no-underline decoration-white bg-[#f39d00] text-white p-1 rounded-lg text-black">
                                 Descargar cv
                                 <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -302,11 +316,243 @@
                 </div>
             </div>
         </div>
+        <div class="mt-24 w-full lg:w-8/12 p-5 mx-auto flex flex-col gap-10 overflow-hidden" id="experiencia">
+            <div class="text-center">
+                <h2 class="text-4xl flex flex-row items-center justify-center gap-5">
+                    <span>Experiencia laboral</span> <svg class="fill-white inline" xmlns="http://www.w3.org/2000/svg"
+                        height="30"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                        <path
+                            d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
+                    </svg>
+                </h2>
+            </div>
+                <div class="h-fit">
+                    <div
+                        class="p-5 text-left border-r bg-white text-black border-2 border-white rounded-md grid sm:grid-cols-[1fr_4fr]">
+                        <div class="border-b sm:border-b-0 sm:border-r border-black pr-5 sm:mb-0 mb-3">
+                            <h2 class="text-2xl">
+                                Desarrollador web
+                            </h2>
+                            <span>
+                                Zierzoware
+                            </span>
+                            <a class="inline-block" target="_blank" href="https://www.organizate.biz"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                                </svg></a>
+                            <div class="text-xs">
+                                noviembre de 2021 - julio de 2023
+                            </div>
+                        </div>
+                        <div class="text-left overflow-hidden pl-0 sm:pl-10 break-words">
+                            <p class="font-sans text-sm">- Mantenimiento de aplicación web encargada en la gestión de
+                                centros destinados a la
+                                mejora de la salud.
+                            </p>
+                            <p class="font-sans text-sm mt-5">- Creación de nuevos complementos para mejorar la
+                                funcionalidad de la aplicación.
+                            </p>
+                            <div class="flex flex-row flex-wrap gap-10 mt-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M180.4 203c-.7 22.7 10.6 32.7 10.9 39.1a8.2 8.2 0 0 1 -4.1 6.3l-12.8 9a10.7 10.7 0 0 1 -5.6 1.9c-.4 0-8.2 1.8-20.5-25.6a78.6 78.6 0 0 1 -62.6 29.5c-16.3 .9-60.4-9.2-58.1-56.2-1.6-38.3 34.1-62.1 70.9-60.1 7.1 0 21.6 .4 47 6.3v-15.6c2.7-26.5-14.7-47-44.8-43.9-2.4 0-19.4-.5-45.8 10.1-7.4 3.4-8.3 2.8-10.8 2.8-7.4 0-4.4-21.5-2.9-24.2 5.2-6.4 35.9-18.4 65.9-18.2a76.9 76.9 0 0 1 55.7 17.3 70.3 70.3 0 0 1 17.7 52.4l0 69.3zM94 235.4c32.4-.5 46.2-20 49.3-30.5 2.5-10.1 2.1-16.4 2.1-27.4-9.7-2.3-23.6-4.9-39.6-4.9-15.2-1.1-42.8 5.6-41.7 32.3-1.2 16.8 11.1 31.4 30 30.5zm170.9 23.1c-7.9 .7-11.5-4.9-12.7-10.4l-49.8-164.7c-1-2.8-1.6-5.7-1.9-8.6a4.6 4.6 0 0 1 3.9-5.3c.2 0-2.1 0 22.3 0 8.8-.9 11.6 6 12.6 10.4l35.7 140.8 33.2-140.8c.5-3.2 2.9-11.1 12.8-10.2h17.2c2.2-.2 11.1-.5 12.7 10.4l33.4 142.6L421 80.1c.5-2.2 2.7-11.4 12.7-10.4h19.7c.9-.1 6.2-.8 5.3 8.6-.4 1.9 3.4-10.7-52.8 169.9-1.2 5.5-4.8 11.1-12.7 10.4h-18.7c-10.9 1.2-12.5-9.7-12.7-10.8L328.7 110.7l-32.8 137c-.2 1.1-1.7 11.9-12.7 10.8h-18.3zm273.5 5.6c-5.9 0-33.9-.3-57.4-12.3a12.8 12.8 0 0 1 -7.8-11.9v-10.8c0-8.5 6.2-6.9 8.8-5.9 10 4.1 16.5 7.1 28.8 9.6 36.7 7.5 52.8-2.3 56.7-4.5 13.2-7.8 14.2-25.7 5.3-35-10.5-8.8-15.5-9.1-53.1-21-4.6-1.3-43.7-13.6-43.8-52.4-.6-28.2 25.1-56.2 69.5-56 12.7 0 46.4 4.1 55.6 15.6 1.4 2.1 2 4.6 1.9 7v10.1c0 4.4-1.6 6.7-4.9 6.7-7.7-.9-21.4-11.2-49.2-10.8-6.9-.4-39.9 .9-38.4 25-.4 19 26.6 26.1 29.7 26.9 36.5 11 48.7 12.8 63.1 29.6 17.1 22.3 7.9 48.3 4.4 55.4-19.1 37.5-68.4 34.4-69.3 34.4zm40.2 104.9c-70 51.7-171.7 79.3-258.5 79.3A469.1 469.1 0 0 1 2.8 327.5c-6.5-5.9-.8-14 7.2-9.5a637.4 637.4 0 0 0 316.9 84.1 630.2 630.2 0 0 0 241.6-49.6c11.8-5 21.8 7.8 10.1 16.4zm29.2-33.3c-9-11.5-59.3-5.4-81.8-2.7-6.8 .8-7.9-5.1-1.8-9.5 40.1-28.2 105.9-20.1 113.4-10.6 7.6 9.5-2.1 75.4-39.6 106.9-5.8 4.9-11.3 2.3-8.7-4.1 8.4-21.3 27.4-68.5 18.4-80z" />
+                                </svg>
+                                <img src="images/mysql.png" width="24" height="32" alt="mysql">
+                            </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div
+                    class="p-5 text-left border-r bg-white text-black border-2 border-white rounded-md grid sm:grid-cols-[1fr_4fr]">
+                        <div class="border-b sm:border-b-0 sm:border-r border-black pr-5 sm:mb-0 mb-3">
+                            <h2 class="text-2xl">
+                                Programador en prácticas
+                            </h2>
+                            <span>
+                                Prepay technologies
+                            </span>
+                            <div class="text-xs">
+                                abril de 2021 - junio de 2021
+                            </div>
+                        </div>
+                        <div class="text-left overflow-hidden pl-0 sm:pl-10 break-words">
+                            <p class="font-sans text-sm">- Creación de flujos de navegación para la comprobación el
+                                correcto funcionamiento de la
+                                web
+                            </p>
+                            <p class="font-sans text-sm mt-5">- Modificación de diseño de la web orientada a la
+                                utilización en quiosco.
+                            </p>
+                            <div class="flex flex-row flex-wrap gap-10 mt-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z" />
+                                </svg>
+                                <img src="images/c-sharp.png" height="16" width="28" class="grayscale">
+                                <img src="images/sql-server.png" height="32" width="24" class="grayscale">
+                            </div>
+                        </div>
+                    </div>
+    </div>
+    <div class="mt-24 lg:w-6/12 lg:p-0 p-10 w-full mx-auto overflow-hidden" id="cursos">
+        <div>
+            <div class="text-center mb-10">
+                <h2 class="text-4xl flex justify-center items-center cursor-pointer flex-row gap-2">
+                <span>Cursos</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" version="1.0" width="24" height="24" viewBox="0 0 512.000000 512.000000">
+        
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+                        <path d="M1325 4833 c-242 -51 -448 -217 -554 -444 -81 -175 -76 -45 -76 -1834 l0 -1590 22 -85 c81 -305 316 -532 616 -594 67 -14 217 -16 1227 -16 1255 0 1221 -1 1368 57 165 67 329 217 407 376 25 51 55 130 68 177 l22 85 0 1595 0 1595 -23 85 c-82 309 -312 532 -614 594 -68 14 -215 16 -1235 15 -988 -1 -1168 -3 -1228 -16z m2436 -319 c118 -35 238 -134 294 -243 55 -110 55 -92 55 -1293 l0 -1107 -1367 -4 c-1246 -3 -1374 -5 -1431 -20 -84 -23 -175 -62 -239 -103 -29 -19 -56 -34 -58 -34 -3 0 -5 537 -5 1193 0 1296 -1 1256 56 1369 52 103 170 203 282 239 54 17 120 18 1208 18 1024 1 1156 -1 1205 -15z m349 -3221 c0 -283 -9 -352 -55 -444 -35 -67 -124 -161 -189 -198 -113 -64 -46 -61 -1307 -61 -1098 0 -1150 1 -1208 19 -209 65 -356 280 -337 493 11 122 74 250 160 324 49 44 165 101 227 113 24 5 644 9 1377 10 l1332 1 0 -257z"/>
+                        <path d="M1850 3338 c-117 -60 -115 -225 4 -279 39 -18 79 -19 706 -19 634 0 667 1 707 20 106 48 120 195 25 268 l-35 27 -681 3 -681 2 -45 -22z"/>
+                        </g>
+                    </svg>  
+                </h2>
+            </div>
+          <!-- Slideshow container -->
+<div class="flex">
+<div class="mySlides fade">
+    <div class="flex flex-col">
+            <div class="flex xl:flex-row flex-col items-center">
+                <img class="xl:w-96 w-[574px] xl:h-auto h-[443px] mb-5" src="./images/Coursera-LWVSU7D4Q68R-_1_.webp" >
+                <div class="h-fit ml-4">
+                    <a target="_blank" class="border-b border-b-white mb-10 w-fit flex gap-2 justify-center items-center font-mono no-underline cursor-pointer">
+                    Ver vercitifado
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                    </a>
+                    <p class="text-sm font-sans">
+                        Certificado de introducción al desarrollo front-end. Aquí se aprendió a desarrollar aplicaciones web con HTML, CSS.
+                       </p>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="flex flex-col">
+            <div  class="flex xl:flex-row flex-col items-center">
+                <img class="xl:w-96 w-[574px] xl:h-auto h-[443px] mb-5" src="./images/Coursera-PDNXM4U2X3GS-_1__1.webp" >
+                <div class="h-fit ml-4">
+                    <a target="_blank" class="w-fit mb-10 border-b border-b-white flex gap-2 justify-center items-center font-mono no-underline cursor-pointer">
+                    Ver vercitifado
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                    </a>
+                    <p class="text-sm font-sans">
+                        Certificado de programación en Javascript, aprendí estrucutras de control, funciones, arreglos, objetos, clases, promesas, asincronismo, manejo de errores, entre otros.
+                    </p>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="flex flex-col">
+            <div  class="flex xl:flex-row flex-col items-center">
+                <img class="xl:w-96 w-[574px] xl:h-auto h-[443px] mb-5" src="./images/Coursera-JU7H7UHTANFP-_1_.webp" >
+                <div class="h-fit ml-4">
+                    <a target="_blank" class="w-fit mb-10 border-b border-b-white flex gap-2 justify-center items-center font-mono no-underline cursor-pointer">
+                    Ver vercitifado
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                    </a>
+                    <p class="text-sm font-sans">
+                        Certificado de control de versiones con Git y GitHub. Aprendí a manejar el control de versiones con Git y GitHub, a trabajar en equipo, a manejar ramas, a hacer pull request, entre otros.
+                    </p>
+                </div>
+            </div>
+    </div>
+</div>
+<div class="mySlides fade">
+    <div class="flex flex-col">
+            <div  class="flex xl:flex-row flex-col items-center">
+                <img class="xl:w-96 w-[574px] object-contain xl:h-auto h-[443px] mb-5" src="./images/spring-boot.png" >
+                <div class="h-fit ml-4">
+                    <a target="_blank" href="https://www.udemy.com/course/spring-hibernate-tutorial/?ranMID=39197&ranEAID=CuIbQrBnhiw&ranSiteID=CuIbQrBnhiw-9.QykZKfTjRexIU8wKHf0A&utm_source=aff-campaign&LSNPUBID=CuIbQrBnhiw&utm_medium=udemyads" class="w-fit mb-10 border-b border-b-white flex gap-2 justify-center items-center font-mono no-underline cursor-pointer">
+                    Ver Curso
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                    </a>
+                    <p class="text-sm font-sans">
+                        Actualmente estoy realizando un curso de spring boot, en el cual estoy aprendiendo a desarrollar aplicaciones web con java, spring boot e hibernate.
+                    </p>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+</div>
+        </div>
+    </div>
         <div class="mt-24 lg:w-6/12 lg:p-0 p-10 w-full mx-auto overflow-hidden" id="proyectos">
             <div>
                 <div class="text-center mb-10">
-                    <h2 class="text-4xl">
-                        Proyectos
+                    <h2 class="text-4xl flex justify-center items-center cursor-pointer flex-row gap-2">
+                        <span>Proyectos</span>
+                        <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="24" width="30"
+                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+                            </svg>
                     </h2>
                 </div>
                 <div class="flex flex-col justify-center items-center">
@@ -383,131 +629,6 @@
                 </div>
             </div>
         </div>
-        <div class="mt-24 w-full lg:w-8/12 p-5 mx-auto flex flex-col gap-10 overflow-hidden" id="experiencia">
-                <div class="text-center">
-                    <h2 class="text-4xl flex flex-row items-center justify-center gap-5">
-                        <span>Experiencia laboral</span> <svg class="fill-white inline" xmlns="http://www.w3.org/2000/svg"
-                            height="30"
-                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                            <path
-                                d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
-                        </svg>
-                    </h2>
-                </div>
-                    <div class="h-fit">
-                        <div
-                            class="p-5 text-left border-r bg-white text-black border-2 border-white rounded-md shadow-[0px_8px_20px_white] grid grid-cols-[1fr_4fr]">
-                            <div class="border-r border-black pr-5">
-                                <h2 class="text-2xl">
-                                    Desarrollador web
-                                </h2>
-                                <span>
-                                    Zierzoware
-                                </span>
-                                <a class="inline-block" target="_blank" href="https://www.organizate.biz"><svg
-                                        xmlns="http://www.w3.org/2000/svg" height="16" width="20"
-                                        viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                                    </svg></a>
-                                <div class="text-xs">
-                                    noviembre de 2021 - julio de 2023
-                                </div>
-                            </div>
-                            <div class="text-left overflow-hidden pl-10 break-words">
-                                <p class="font-sans text-sm">- Mantenimiento de aplicación web encargada en la gestión de
-                                    centros destinados a la
-                                    mejora de la salud.
-                                </p>
-                                <p class="font-sans text-sm mt-5">- Creación de nuevos complementos para mejorar la
-                                    funcionalidad de la aplicación.
-                                </p>
-                                <div class="flex flex-row flex-wrap gap-10 mt-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M180.4 203c-.7 22.7 10.6 32.7 10.9 39.1a8.2 8.2 0 0 1 -4.1 6.3l-12.8 9a10.7 10.7 0 0 1 -5.6 1.9c-.4 0-8.2 1.8-20.5-25.6a78.6 78.6 0 0 1 -62.6 29.5c-16.3 .9-60.4-9.2-58.1-56.2-1.6-38.3 34.1-62.1 70.9-60.1 7.1 0 21.6 .4 47 6.3v-15.6c2.7-26.5-14.7-47-44.8-43.9-2.4 0-19.4-.5-45.8 10.1-7.4 3.4-8.3 2.8-10.8 2.8-7.4 0-4.4-21.5-2.9-24.2 5.2-6.4 35.9-18.4 65.9-18.2a76.9 76.9 0 0 1 55.7 17.3 70.3 70.3 0 0 1 17.7 52.4l0 69.3zM94 235.4c32.4-.5 46.2-20 49.3-30.5 2.5-10.1 2.1-16.4 2.1-27.4-9.7-2.3-23.6-4.9-39.6-4.9-15.2-1.1-42.8 5.6-41.7 32.3-1.2 16.8 11.1 31.4 30 30.5zm170.9 23.1c-7.9 .7-11.5-4.9-12.7-10.4l-49.8-164.7c-1-2.8-1.6-5.7-1.9-8.6a4.6 4.6 0 0 1 3.9-5.3c.2 0-2.1 0 22.3 0 8.8-.9 11.6 6 12.6 10.4l35.7 140.8 33.2-140.8c.5-3.2 2.9-11.1 12.8-10.2h17.2c2.2-.2 11.1-.5 12.7 10.4l33.4 142.6L421 80.1c.5-2.2 2.7-11.4 12.7-10.4h19.7c.9-.1 6.2-.8 5.3 8.6-.4 1.9 3.4-10.7-52.8 169.9-1.2 5.5-4.8 11.1-12.7 10.4h-18.7c-10.9 1.2-12.5-9.7-12.7-10.8L328.7 110.7l-32.8 137c-.2 1.1-1.7 11.9-12.7 10.8h-18.3zm273.5 5.6c-5.9 0-33.9-.3-57.4-12.3a12.8 12.8 0 0 1 -7.8-11.9v-10.8c0-8.5 6.2-6.9 8.8-5.9 10 4.1 16.5 7.1 28.8 9.6 36.7 7.5 52.8-2.3 56.7-4.5 13.2-7.8 14.2-25.7 5.3-35-10.5-8.8-15.5-9.1-53.1-21-4.6-1.3-43.7-13.6-43.8-52.4-.6-28.2 25.1-56.2 69.5-56 12.7 0 46.4 4.1 55.6 15.6 1.4 2.1 2 4.6 1.9 7v10.1c0 4.4-1.6 6.7-4.9 6.7-7.7-.9-21.4-11.2-49.2-10.8-6.9-.4-39.9 .9-38.4 25-.4 19 26.6 26.1 29.7 26.9 36.5 11 48.7 12.8 63.1 29.6 17.1 22.3 7.9 48.3 4.4 55.4-19.1 37.5-68.4 34.4-69.3 34.4zm40.2 104.9c-70 51.7-171.7 79.3-258.5 79.3A469.1 469.1 0 0 1 2.8 327.5c-6.5-5.9-.8-14 7.2-9.5a637.4 637.4 0 0 0 316.9 84.1 630.2 630.2 0 0 0 241.6-49.6c11.8-5 21.8 7.8 10.1 16.4zm29.2-33.3c-9-11.5-59.3-5.4-81.8-2.7-6.8 .8-7.9-5.1-1.8-9.5 40.1-28.2 105.9-20.1 113.4-10.6 7.6 9.5-2.1 75.4-39.6 106.9-5.8 4.9-11.3 2.3-8.7-4.1 8.4-21.3 27.4-68.5 18.4-80z" />
-                                    </svg>
-                                    <img src="images/mysql.png" width="24" height="32" alt="mysql">
-                                </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div
-                            class="p-5 mt-10 text-left border-r bg-white text-black border-2 border-white rounded-md shadow-[0px_8px_20px_white] grid grid-cols-[1fr_4fr]">
-                            <div class="border-r border-black pr-5">
-                                <h2 class="text-2xl">
-                                    Programador en prácticas
-                                </h2>
-                                <span>
-                                    Prepay technologies
-                                </span>
-                                <div class="text-xs">
-                                    abril de 2021 - junio de 2021
-                                </div>
-                            </div>
-                            <div class="text-left overflow-hidden pl-10 break-words">
-                                <p class="font-sans text-sm">- Creación de flujos de navegación para la comprobación el
-                                    correcto funcionamiento de la
-                                    web
-                                </p>
-                                <p class="font-sans text-sm mt-5">- Modificación de diseño de la web orientada a la
-                                    utilización en quiosco.
-                                </p>
-                                <div class="flex flex-row flex-wrap gap-10 mt-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                        <path
-                                            d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z" />
-                                    </svg>
-                                    <img src="images/c-sharp.png" height="16" width="28" class="grayscale">
-                                    <img src="images/sql-server.png" height="32" width="24" class="grayscale">
-                                </div>
-                            </div>
-                        </div>
-        </div>
         <div id="contacto" class="mt-24 w-full lg:w-8/12 p-5 mx-auto flex flex-col gap-10 overflow-hidden">
             <div class="text-center">
                 <h2 class="text-4xl flex flex-row items-center justify-center gap-5">
@@ -519,23 +640,42 @@
                 </svg>
                 </h2>
             </div>
-            <div class="flex justify-center gap-10">
-                <a id="linkedin" href="https://www.linkedin.com/in/%C3%A1ngel-p%C3%A9rez-mart%C3%ADnez-6b5933210/"
-                target="_blank">
-                <svg class="fill-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30"
-                    width="30"
-                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                    <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                </svg>
-            </a>
-            <a href="mailto:angelperez07092000@gmail.com" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" widt="30" height="30">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
-                  </svg>
-                </a>
+            <div>
+                <form method="post">
+                    <div class="flex flex-col gap-2 lg:w-8/12 w-full justify-center items-center mx-auto pb-10">
+                        <div class="flex lg:flex-row flex-col w-full gap-3 justify-between">
+                        <input class="w-full outline-none text-white bg-gray-700  text-xs border-white border p-2" placeholder="Nombre" type="text" id="name" name="name" required>
+                        <input class="w-full outline-none text-white bg-gray-700  text-xs border-white border p-2" type="email" id="email" name="email" placeholder="email" required>
+                        </div>
+                        <textarea rows="6"  class="font-sans w-full outline-none text-white bg-gray-700  text-xs border-white border p-2" id="message" name="message" placeholder="mensaje" required></textarea>
+                        <div class="flex justify-around w-full">
+                            <button class="flex items-center gap-2 font-sans p-1 text-sm py-0 px-5 text-[#f39d00] rounded-lg bg-gray-600" type="submit">Send
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                            </svg>
+                            </button>
+                            <button class="flex items-center gap-2 font-sans p-1 text-sm py-0 px-5 text-[#f39d00] rounded-lg bg-gray-600" type="submit">Abrir
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" 
+                                fill="#f39d00" 
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                        <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </div>
+</div>
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden transition-all duration-1">
+    <div class="bg-white p-5 rounded-lg">
+        <h3 class="text-2xl text-black font-bold mb-3">Gracias por ponerse en contacto</h3>
+        <p class="text-sm text-black">Lo responderé tan pronto como me sea posible.</p>
+        <button id="closeModal" onclick="closeModal()" class="mt-5 bg-gray-600 text-white px-4 py-2 rounded-lg">Cerrar</button>
+    </div>
+</div>
 </body>
-
 </html>
