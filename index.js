@@ -81,6 +81,10 @@ function callSender() {
 
   fetch(url, {
     method: "POST",
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
     body: JSON.stringify({
       name: document.querySelector("#name").value,
       email: document.querySelector("#email").value,
