@@ -77,36 +77,45 @@ function handleSubmit(e) {
 }
 
 function callSender() {
-  showModal();
-  // fetch("http://localhost:3000/", {
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //     "Access-Control-Allow-Origin": "*", // Allow requests from any origin
-  //     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE", // Allow specific HTTP methods
-  //     "Access-Control-Allow-Headers": "Content-Type", // Allow specific headers
-  //   },
-  //   body: JSON.stringify({
-  //     name: document.querySelector("#name").value,
-  //     email: document.querySelector("#email").value,
-  //     message: document.querySelector("#message").value,
-  //   }),
-  // })
-  //   .then((data) => {
-  //     showModal();
-  //   if(data.status===200){
-  //     alert("Mensaje enviado correctamente");
-  //   }else if(data.status===500){
-  //     alert("Error al enviar el mensaje");
-  //   }})
-  //   .catch((err) => {
-  //     alert("Error al enviar el mensaje");
-  //   });
+  const url = 'https://email-sender-eight-pi.vercel.app/';
+
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST",
+      "Access-Control-Allow-Headers": "Content-Type",
+    },
+    body: JSON.stringify({
+      name: document.querySelector("#name").value,
+      email: document.querySelector("#email").value,
+      message: document.querySelector("#message").value,
+    }),
+  })
+    .then((data) => {
+      if (data.status === 200) {
+        showModal(false);
+      } else if (data.status === 500) {
+        showModal(true);
+      }
+    })
+    .catch((err) => {
+      showModal(true);
+    });
 }
 
-function showModal(){
-  document.getElementById('modal').classList.remove('hidden');
+function showModal(error) {
+  mensaje = error
+    ? "Lo siento, ha ocurrido un error"
+    : "Gracias por ponerse en contacto";
+  texto = error
+    ? "Por favor, inténtelo de nuevo más tarde."
+    : "Lo responderé tan pronto como me sea posible.";
+  document.getElementById("title-modal").innerHTML = mensaje;
+  document.getElementById("text-modal").innerHTML = texto;
+  document.getElementById("modal").classList.remove("hidden");
 }
-function closeModal(){
-  document.getElementById('modal').classList.add('hidden');
+function closeModal() {
+  document.getElementById("modal").classList.add("hidden");
 }

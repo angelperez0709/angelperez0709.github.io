@@ -143,13 +143,6 @@
                             </svg>
                         </a>
                 </li>
-                <li>
-                    <a href="mailto:angelperez07092000@gmail.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" widt="30" height="30">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
-                      </svg>
-                    </a>
-                </li>
             </ul>
         </nav>
     </header>
@@ -463,7 +456,7 @@
                 <img class="xl:w-96 w-[574px] xl:h-auto h-[443px] mb-5" src="./images/Coursera-LWVSU7D4Q68R-_1_.webp" >
                 <div class="h-fit ml-4">
                     <a target="_blank" class="border-b border-b-white mb-10 w-fit flex gap-2 justify-center items-center font-mono no-underline cursor-pointer">
-                    Ver vercitifado
+                    Ver certificado
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg>
@@ -654,7 +647,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
                             </svg>
                             </button>
-                            <button class="flex items-center gap-2 font-sans p-1 text-sm py-0 px-5 text-[#f39d00] rounded-lg bg-gray-600" type="submit">Abrir
+                            <a class="flex items-center gap-2 font-sans p-1 text-sm py-0 px-5 text-[#f39d00] rounded-lg bg-gray-600" href="https://www.linkedin.com/in/%C3%A1ngel-p%C3%A9rez-mart%C3%ADnez-6b5933210/" target="_blank">Abrir
                                 <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" 
                                 fill="#f39d00" 
                                 stroke-width="1.5"
@@ -663,7 +656,7 @@
                                         <path
                                             d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
                                     </svg>
-                            </button>
+                                </a>
                         </div>
                     </div>
                 </form>
@@ -672,8 +665,8 @@
 <!-- Modal -->
 <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden transition-all duration-1">
     <div class="bg-white p-5 rounded-lg">
-        <h3 class="text-2xl text-black font-bold mb-3">Gracias por ponerse en contacto</h3>
-        <p class="text-sm text-black">Lo responderé tan pronto como me sea posible.</p>
+        <h3 class="text-2xl text-black font-bold mb-3" id="title-modal"></h3>
+        <p class="text-sm text-black" id="text-modal">Lo responderé tan pronto como me sea posible.</p>
         <button id="closeModal" onclick="closeModal()" class="mt-5 bg-gray-600 text-white px-4 py-2 rounded-lg">Cerrar</button>
     </div>
 </div>
