@@ -81,12 +81,6 @@ function callSender() {
 
   fetch(url, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "https://angelperez0709.github.io/",
-      "Access-Control-Allow-Methods": "POST",
-      "Access-Control-Allow-Headers": "Content-Type",
-    },
     body: JSON.stringify({
       name: document.querySelector("#name").value,
       email: document.querySelector("#email").value,
